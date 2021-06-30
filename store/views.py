@@ -429,7 +429,6 @@ class RequestRefundView(View):
             message = form.cleaned_data.get('message')
             email = form.cleaned_data.get('email')
             try:
-                import pdb; pdb.set_trace()
                 # edit the order
                 order = Order.objects.get(ref_code=ref_code)
                 order.refund_requested = True
