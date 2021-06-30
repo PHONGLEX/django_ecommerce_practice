@@ -24,11 +24,11 @@ AUTH_PASSWORD_VALIDATORS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('NAME'),
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
-        'HOST': config('HOST'),
-        'PORT': config('PORT')
+        # 'NAME': config('NAME'),
+        # 'USER': config('USER'),
+        # 'PASSWORD': config('PASSWORD'),
+        # 'HOST': config('HOST'),
+        # 'PORT': config('PORT')
     }
 }
 
