@@ -152,3 +152,5 @@ cython_debug/
 
 static_in_env
 .env
+
+media_root
