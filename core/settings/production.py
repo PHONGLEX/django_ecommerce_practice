@@ -53,3 +53,7 @@ AWS_LOCATION=config('AWS_LOCATION')
 STATICFILES_STORAGE="storages.backends.s3boto3.S3Boto3Storage"
 STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+import dj_database_url 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
